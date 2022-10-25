@@ -10,15 +10,22 @@ const Navbar = ({handleChange}) => {
     const [selected , setSelected] = useState(0);
     const [showTimeStamp , setShowTime] = useState(false)
     const Links = [
-        { id: 1, name: "Menu", link : 'menu' },
+        { id: 1, name: "Menu", link : 'menus' },
         { id: 2, name: "Restaurents", link : 'restaurents' },
-        { id: 3, name: "Classes" , link : 'service' },
+        { id: 3, name: "Classes" , link : 'classes' },
       ];
 
       const handleClick = (e , item) => {
-        e.preventDefault()
-        router.push(item)
-        console.log(item)
+       const  url = 'localhost:3000/'
+        if (router.pathname.startsWith('/classes/')) {
+            // e.preventDefault() 
+            router.push(`/${item}`)
+            console.log(item , this)
+        } else {
+            e.preventDefault()
+            router.push(item)
+            console.log(item)
+        }
       }
 
       const handleBooking = (e) => {
@@ -66,7 +73,7 @@ const Navbar = ({handleChange}) => {
           transition = {{ease : 'easeOut',duration : .3 ,  delay : i * .25}}
           exit = {{opacity : 0}}
           href = {item.link}
-          onClick = {(e) => {handleChange(i) , setSelected(i) , handleClick(e , item = item.link)} }
+          onClick = {(e) => { setSelected(i) , handleClick(e , item = item.link) } }
             className={`${selected == i && 'bg-[#F8F8F8] transition-all ease-out duration-500' } text-[#111111] rounded-[100px] py-2 px-4 cursor-pointer`}
           >
               <p className="md:text-base text-sm leading-6 font-medium">{item.name}</p>

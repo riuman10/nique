@@ -1,18 +1,15 @@
-import Head from "next/head"
-import Image from "next/image"
-import BookingHero from '../public/booking.jpeg';
-import Logo from '../public/nique.png'
+import Head from "next/head";
+import Image from "next/image";
+import BookingHero from "../public/booking.jpeg";
+import Logo from "../public/nique.png";
 import Navbar from "../components/Navbar";
 
-
-
-
 const Booking = () => {
-    return (
-        <div>
-        <div className="flex flex-auto h-screen">
+  return (
+    <div>
+      <div className="flex flex-auto h-screen">
         <Head>
-        <link
+          <link
             href="https://api.fontshare.com/v2/css?f[]=chillax@300&display=swap"
             rel="stylesheet"
           />
@@ -35,13 +32,10 @@ const Booking = () => {
           </div>
         </div>
         {/* Right SIde  */}
-        <div className="w-full bg-black container mx-auto">
-
-        </div>
-        </div>
-        </div>
-    )
-}
-
+        <div className="w-full bg-black container mx-auto"></div>
+      </div>
+    </div>
+  );
+};
 
 export default Booking;

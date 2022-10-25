@@ -13,7 +13,7 @@ const DishTab = ({ title, price, description, image, starter }) => {
           <div className="mr-4">
             <Image
               src={image}
-              alt=""
+              alt={title}
               height={60}
               width={80}
               className="rounded-lg"
