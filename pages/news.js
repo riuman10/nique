@@ -32,7 +32,9 @@ const News = () => {
           </div>
         </div>
         {/* Right SIde  */}
-        <div className="w-full bg-black container mx-auto"></div>
+        <div className="w-full bg-black container mx-auto overflow-y-auto">
+          
+        </div>
       </div>
     </div>
   );

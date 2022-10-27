@@ -16,3 +16,7 @@
     font-family: "chillax";
     src: url("../public/fonts/Chillax-Medium.otf");
 }
+
+html {
+    scroll-behavior: smooth;
+}

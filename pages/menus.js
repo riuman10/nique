@@ -6,6 +6,7 @@ import Navbar from "../components/Navbar";
 import DishTab from "../components/DishTab";
 import Burger from "../public/menu/burger.jpeg";
 import Head from "next/head";
+import Footer from "../components/Footer";
 
 const Menus = () => {
   const Links = [
@@ -95,7 +96,7 @@ const Menus = () => {
       id: 1,
       name: "Tomato Toast",
       description: "Lorem ipsum dolor sit amet, consectetur",
-      image: "../public/menu/burger.jpeg",
+      image: Burger,
       starter: false,
       price: "$9.00",
     },
@@ -103,8 +104,8 @@ const Menus = () => {
       id: 2,
       name: "Tomato Toast",
       description: "Lorem ipsum dolor sit amet, consectetur",
-      image: "../public/menu/burger.jpeg",
-      starter: true,
+      image: Burger,
+      starter: false,
       price: "$9.00",
       discount: true,
       discount_price: "$29.00",
@@ -113,7 +114,7 @@ const Menus = () => {
       id: 3,
       name: "Tomato Toast",
       description: "Lorem ipsum dolor sit amet, consectetur",
-      image: "../public/menu/burger.jpeg",
+      image: Burger,
       starter: false,
       price: "$9.00",
     },
@@ -121,8 +122,8 @@ const Menus = () => {
       id: 4,
       name: "Tomato Toast",
       description: "Lorem ipsum dolor sit amet, consectetur",
-      image: "../public/menu/burger.jpeg",
-      starter: false,
+      image: Burger,
+      starter: true,
       price: "$5.00",
     },
   ];
@@ -167,9 +168,9 @@ const Menus = () => {
           <div className="container mx-auto flex justify-center gap-10 bg-black text-white py-6">
             {Links.map((item) => (
               <div key={item.id}>
-                <p className="font-chillax hover:text-[#FACE8D] cursor-pointer font-light">
+                <a className="font-chillax hover:text-[#FACE8D] cursor-pointer font-light" href= '#breakfast'>
                   {item.name}
-                </p>
+                </a>
               </div>
             ))}
           </div>
@@ -201,7 +202,7 @@ const Menus = () => {
               ))}
             </div>
 
-            <div className="mt-12">
+            <div className="mt-12" id = 'breakfast'>
               <p className="font-rose text-[#FACE8D] text-[65px]">Breakfast</p>
               <div className="flex flex-col gap-8">
                 {BreakFast.map((item) => (
@@ -222,6 +223,29 @@ const Menus = () => {
                 ))}
               </div>
             </div>
+
+            <div className="mt-12">
+              <p className="font-rose text-[#FACE8D] text-[65px]">Dinner</p>
+              <div className="flex flex-col gap-8">
+                {Dinner.map((item) => (
+                  <motion.div
+                    initial={{ opacity: 0, y: 5 }}
+                    whileInView={{ opacity: 1, y: 0 }}
+                    viewport={{ once: true, amount: 0.4 }}
+                    key={item.id}
+                  >
+                    <DishTab
+                      title={item.name}
+                      description={item.description}
+                      price={item.price}
+                      image={item.image}
+                      starter={item.starter}
+                    />
+                  </motion.div>
+                ))}
+              </div>
+            </div>
+            <Footer />
           </div>
         </div>
       </div>
