@@ -1,9 +1,14 @@
 
 
-export default function Layout({ children }) {
+const Layout =  ({ children }) => {
   return (
     <>
-      <main>{children}</main>
+      <main>
+        {children}
+      </main>
     </>
   )
 }
+
+
+export default Layout;

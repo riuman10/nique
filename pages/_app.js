@@ -1,7 +1,7 @@
-import Layout from '../components/layout'
 import '../styles/globals.css'
 import { AnimatePresence, motion } from 'framer-motion'
 import { useRouter } from 'next/router'
+import Layout from '../components/Layout';
 
 export default function MyApp({ Component, pageProps }) {
   const router = useRouter()
