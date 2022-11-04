@@ -112,7 +112,7 @@ const ClassDetails = ({ kilaas }) => {
           <title>{kilaas[0].name} - Nique Restaurents</title>
         </Head>
         <div className="relative w-full">
-          <Image src={kilaas[0].image} layout="fill" alt="Hero" className="opacity-[.8] bg-black mix-blend-overlay" />
+          <Image src={Honey} layout="fill" alt="Hero" className="opacity-[.8] bg-black mix-blend-overlay" />
           <div className="relative h-full flex items-center flex-col justify-between  pt-16">
             <Image src={Logo} alt="Hero" onClick={() => {router.push('/')}}  className = 'cursor-pointer'/>
             <div className="flex items-center flex-col">
