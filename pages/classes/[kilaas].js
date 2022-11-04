@@ -3,17 +3,17 @@ import { motion } from "framer-motion";
 import Head from "next/head";
 import Image from "next/image";
 import Navbar from "../../components/Navbar";
-import Logo from "../../public/nique.png";
-import Teacher from "../../public/teacher.jpeg";
-import NoodleSoup from "../../public/dish.jpeg";
+import Logo from "/public/nique.png";
+import Teacher from "/public/teacher.jpeg";
+import NoodleSoup from "/public/dish.jpeg";
 import Instagram from '../../components/icons/Instagram'
 import Facebook from '../../components/icons/Facebook';
 import Twitter from '../../components/icons/Twitter';
-import Asian from "../../public/asian.jpeg";
-import Coffee from '../../public/coffee.png';
-import Salad from '../../public/salad.png';
-import Vegan from '../../public/vegan.png';
-import Honey from '../../public/honey.png';
+import Asian from "/public/asian.jpeg";
+import Coffee from '/public/coffee.png';
+import Salad from '/public/salad.png';
+import Vegan from '/public/vegan.png';
+import Honey from '/public/honey.png';
 import Footer from "../../components/Footer";
 import Router from "next/router";
 
