@@ -80,9 +80,9 @@ const Navbar = ({ handleChange }) => {
               className={`${
                 selected == i &&
                 "bg-[#F8F8F8] transition-all ease-out duration-500"
-              } text-[#111111] rounded-[100px] py-2 px-4 cursor-pointer`}
+              } text-[#111111] rounded-[100px] py-2 px-[18px] cursor-pointer`}
             >
-              <p className="md:text-base text-sm leading-6 font-medium">
+              <p className="text-sm leading-6 font-medium">
                 {item.name}
               </p>
             </motion.div>
@@ -93,7 +93,7 @@ const Navbar = ({ handleChange }) => {
             className="py-3 px-6 bg-black rounded-[100px] cursor-pointer"
             onClick={handleBooking}
           >
-            <p className="text-white">Book a table</p>
+            <p className="text-white font-chillax text-sm">Book a table</p>
           </div>
         </div>
       </div>

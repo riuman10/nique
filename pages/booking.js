@@ -3,8 +3,15 @@ import Image from "next/image";
 import BookingHero from "../public/booking.jpeg";
 import Logo from "../public/nique.png";
 import Navbar from "../components/Navbar";
+import Router, { useRouter } from "next/router";
 
 const Booking = () => {
+
+  const router = useRouter()
+
+  const handleClick = () => {
+    router.push('/')
+  }
   return (
     <div>
       <div className="flex flex-auto h-screen">
@@ -18,7 +25,7 @@ const Booking = () => {
         <div className="relative w-full">
           <Image src={BookingHero} layout="fill" alt="Hero" />
           <div className="relative h-full flex items-center flex-col justify-between  pt-16">
-            <Image src={Logo} alt="Hero" />
+            <Image src={Logo} alt="Hero" onClick={handleClick} className = 'cursor-pointer' />
             <div className="flex items-center flex-col">
               <h1 className="font-rose text-[#FACE8D] text-[80px]">
                 Book a table
@@ -74,7 +81,7 @@ const Booking = () => {
             />
           </div>
           </div>
-          <div className="bg-[#F8D49E] text-center py-[22px] text-black rounded-full mb-[200px]">
+          <div className="bg-[#F8D49E] text-center py-[22px] text-black rounded-full mb-[200px] cursor-pointer">
             BOOK A TABLE
           </div>
           </div>

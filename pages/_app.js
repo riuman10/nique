@@ -14,20 +14,23 @@ export default function MyApp({ Component, pageProps }) {
       animate = 'animateState'
       exit = 'exitState'
       transition = {{
-        duration : .65,
+        duration : .6,
         ease : 'easeOut'
       }}
       variants = {{
         initialState : {
           opacity : 0,
-          clipPath: 'circle(3.3% at 51% 45%)'
+          // clipPath: 'circle(3.3% at 51% 45%)'
+          clipPath: 'inset(100& 0 0 0)'
         },
         animateState : {
           opacity : 1,
-          clipPath: 'circle(74.7% at 49% 45%)'
+          // clipPath: 'circle(74.7% at 49% 45%)'
+          clipPath: 'inset(0% 0 0% 0)'
         },
         exitState : {
-          clipPath: 'circle(0% at 50% 50%)'
+          // clipPath: 'circle(0% at 50% 50%)'
+          clipPath:'inset(100% 0 0 0)'
         }
       }}
       >

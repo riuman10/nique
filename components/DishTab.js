@@ -1,12 +1,15 @@
 import Image from "next/image";
 import Burger from "../public/menu/burger.jpeg";
+import { useState } from "react";
 
-const DishTab = ({ title, price, description, image, starter }) => {
+const DishTab = ({ title, price, description, image, starter , onClick}) => {
+  
   return (
     <div
-      className={`flex font-chillax relative py-[21px] px-[24px] ${
+      className={`flex font-chillax relative py-[21px] px-[24px] cursor-pointer ${
         starter && "border border-[#F8D49E"
       }] rounded-lg font-light`}
+      onClick = {onClick}
     >
       <div className="flex items-center flex-1">
         <div>
