@@ -2,7 +2,7 @@ import Asian from "../../public/asian.jpeg";
 import Coffee from '/public/coffee.png'
 import Salad from '/public/salad.png';
 import Vegan from '/public/vegan.png';
-import Honey from '/public/honey.png';
+import Honey from "/public/honey.png";
 import Image from "next/image";
 import Head from "next/head";
 import Link from "next/link";
@@ -80,7 +80,7 @@ const Classes = ({ classes }) => {
                 className="relative h-screen min-w-[40vw] cursor-pointer"
               >
                 <Image
-                  src={item.image}
+                  src={Salad}
                   layout="fill"
                   alt={item.name}
                   className="object-cover"
