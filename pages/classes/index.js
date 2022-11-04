@@ -80,7 +80,7 @@ const Classes = ({ classes }) => {
                 className="relative h-screen min-w-[40vw] cursor-pointer"
               >
                 <Image
-                  src={item.image}
+                  src={Honey}
                   layout="fill"
                   alt={item.name}
                   className="object-cover"
