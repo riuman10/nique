@@ -1,5 +1,5 @@
 import Asian from "../../public/class/asian.jpeg";
-import Coffee from '/public/class/coffee.png'
+import Coffee from '../public/class/coffee.png'
 import Salad from '../../public/class/salad.png';
 import Vegan from '../../public/class/vegan.png';
 import Honey from '../../public/class/honey.png';
