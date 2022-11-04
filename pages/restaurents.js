@@ -3,7 +3,7 @@ import Image from "next/image";
 import BookingHero from "../public/booking.jpeg";
 import Logo from "../public/nique.png";
 import Navbar from "../components/Navbar";
-import Restaurent from "../public/class/restaurent.png";
+import Restaurent from "../public/restaurent.png";
 import Footer from "../components/Footer";
 
 const Restaurents = () => {
